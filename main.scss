@@ -29,7 +29,7 @@
     --spacer-sm: 0.25rem;
     --spacer-md: 1rem;
     --spacer-lg: 1.5rem;
-    --spacer-xl: 2rem;
+    --spacer-xl: 3rem;
   }
 }
 
@@ -162,8 +162,8 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: var(--spacer-xl);
+  height: var(--spacer-xl);
   border-radius: 50%;
   background-color: var(--dark-blue-05);
   cursor: pointer;
@@ -187,16 +187,14 @@ button {
   background-color: var(--orange);
   color: #1e1e28;
   border: none;
-  border-radius: 1rem;
-  font-size: 1rem;
+  border-radius: var(--spacer);
   cursor: pointer;
   transition: background-color 0.2s ease;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-}
-
-button:hover {
-  background: var(--white);
+  &:hover {
+    background-color: var(--white);
+  }
 }
 
 .thank-you {
